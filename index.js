@@ -23,10 +23,11 @@ function viewCart() {
   if(cart.length === 0){
     return "Your shopping cart is empty.";
   }
-  var result = "In your cart,";
+  var result = "In your cart, you have ";
   for(var i = 0; i < cart.length; i++){
-    result += `${i === cart.length-1 ? ' and ' : ' you have '} ${cart[i].itemName} at $${itemPrice}`
+    result += `${cart.length !== 1 && i === cart.length-1: 'and ' : ''} ${itemName} at $${itemPrice}${i === cart.length-1: '.' : ', '}`;
   }
+  return result;
 }
 
 function total() {

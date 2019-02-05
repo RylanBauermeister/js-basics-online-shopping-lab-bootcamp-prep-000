@@ -23,8 +23,10 @@ function viewCart() {
   if(cart.length === 0){
     return "Your shopping cart is empty.";
   }
-  
-  cart.forEach(item, )
+  var result = "In your cart,";
+  for(var i = 0; i < cart.length; i++){
+    result += `${i === cart.length-1 ? ' and ' : ' you have '} ${cart[i].itemName} at $${itemPrice}`
+  }
 }
 
 function total() {

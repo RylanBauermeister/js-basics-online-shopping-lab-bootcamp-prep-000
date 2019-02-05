@@ -16,7 +16,7 @@ function addToCart(item) {
  };
  cart.push(objItem);
  
- return `${item} has been added to the cart.`
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {

@@ -15,6 +15,8 @@ function addToCart(item) {
    itemPrice: Math.floor(Math.random()*100)
  };
  cart.push(objItem);
+ 
+ return `${item} has been added to the cart.`
 }
 
 function viewCart() {

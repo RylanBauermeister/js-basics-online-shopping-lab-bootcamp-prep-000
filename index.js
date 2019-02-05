@@ -31,7 +31,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var result = 0;
+  cart.forEach(function(item){
+    result += item.itemPrice;
+  });
+  return result;
 }
 
 function removeFromCart(item) {
